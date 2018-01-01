@@ -1,0 +1,11 @@
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\bin\Debug\netcoreapp2.0\BlanckMVC.deps.json
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\bin\Debug\netcoreapp2.0\BlanckMVC.runtimeconfig.json
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\bin\Debug\netcoreapp2.0\BlanckMVC.runtimeconfig.dev.json
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\bin\Debug\netcoreapp2.0\BlanckMVC.dll
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\bin\Debug\netcoreapp2.0\BlanckMVC.pdb
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\obj\Debug\netcoreapp2.0\BlanckMVC.csprojResolveAssemblyReference.cache
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\obj\Debug\netcoreapp2.0\BlanckMVC.csproj.CoreCompileInputs.cache
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\obj\Debug\netcoreapp2.0\BlanckMVC.AssemblyInfoInputs.cache
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\obj\Debug\netcoreapp2.0\BlanckMVC.AssemblyInfo.cs
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\obj\Debug\netcoreapp2.0\BlanckMVC.dll
+C:\Users\rachi\Desktop\BlanckMVC\BlanckMVC\obj\Debug\netcoreapp2.0\BlanckMVC.pdb
