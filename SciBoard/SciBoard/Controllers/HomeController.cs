@@ -1,37 +1,51 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using BlanckMVC.Models;
+using SciBoard.Services;
+using SciBoard.ViewModels;
 
-namespace BlanckMVC.Controllers
+namespace SciBoard.Controllers
 {
+    //[Route("[controller]/[action]")]
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private IMaterialData _material;
+        public HomeController(IMaterialData material)
         {
-            return View();
+            _material = material;
+        }
+      
+
+        public ViewResult Index()
+
+        {
+            var model = _material.GetAll().Select(video => new VideoViewModel
+            {
+                Id = video.Id,
+                Title = video.Title,
+                Genre = Enum.GetName(typeof(Genres),video.GenreId)
+            });
+            return View(model);
         }
 
-        public IActionResult About()
+       
+     
+        public IActionResult Details(int id)
         {
-            ViewData["Message"] = "Your application description page.";
+            var model = _material.Get(id);
+            if (model == null) return RedirectToAction("Index");
+            return View(new VideoViewModel {
+                Id = model.Id,
+                Title = model.Title,
+                Genre = Enum.GetName(typeof(Genres), model.GenreId)
+            });
 
-            return View();
+          
+
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
+       
 
-            return View();
-        }
-
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+       
     }
 }
